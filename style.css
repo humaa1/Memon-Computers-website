@@ -114,6 +114,15 @@ body{
     left: 20px;
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+ #close{
+    display: none;
+ }
+
 #hero{
    background-image: url('images/Laptop4.png');
     height: 90vh;
@@ -525,6 +534,568 @@ flex-wrap: wrap;
                 width: 100%;
                 text-align: center;
             }
+
+            #page-header{
+                background-image: url("images/b1.jpg");
+                width: 100%;
+                height: 40vh;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                padding: 14px;
+            }
+
+            #page-header h2,
+            #page-header p{
+            color : #fff;
+            }
+
+            #pagination{
+                text-align: center;
+            }
+
+             #pagination a{
+            text-decoration: none;
+            background-color: #088178;
+            padding: 15px 20px;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: 600;
+             }
+
+             #pagination a i{
+                font-size: 16px;
+                font-weight: 600;
+             }
+             #prodetails {
+                display: flex;
+                margin-top: 20px;
+             }
+             #prodetails .single-pro-image{
+              width: 40%;
+              margin-right: 50px;
+             }
+
+             .small-img-group{
+                display: flex;
+                justify-content: space-between;
+             }
+
+             .small-img-col{
+                flex-basis: 24%;
+                cursor: pointer;
+             }
+
+              #prodetails .single-pro-details{
+                width: 50%;
+                padding-top: 30px;
+              }
+
+               #prodetails .single-pro-details h4{
+               padding:40px 0 20px 0;
+
+               }
+
+                 #prodetails .single-pro-details h2{
+                    font-size: 26px;
+               
+               }
+
+              #prodetails .single-pro-details input{
+                width: 50px;
+                height: 47px;
+                padding-left: 10px;
+                font-size: 16px;
+                margin-right: 10px;
+              }
+
+               #prodetails .single-pro-details input:focus{
+                outline: none;
+               }
+
+              #prodetails .single-pro-details button{
+                background-color: #088178;
+                color: #fff;
+              }
+
+              #prodetails .single-pro-details span{
+                line-height: 25px;
+                }
+
+                #page-header.blog-header {
+                background-image: url("images/b19.jpg");
+                }
+
+                #blog{
+                    padding: 150px 150px 0 150px;
+                }
+
+                #blog .blog-box{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    position: relative;
+                    padding-bottom: 90px;
+                }
+
+                #blog .blog-img{
+                    width: 50%;
+                    margin-right: 40px;
+                }
+
+                 #blog img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                 }
+       
+              #blog .blog-details {
+                width: 50%;
+              }
+              
+
+               #blog .blog-details a{
+                text-decoration: none;
+                font-size: 11px;
+                color: #000;
+                font-weight: 700;
+                position: relative;
+                transition: 0.3s;
+               }
+
+               #blog .blog-details a::after{
+               content:"";
+               width: 50px;
+               height: 1px;
+               background-color: #000;
+               position: absolute;
+               top: 4px;
+               right: -60px;
+               }
+
+                #blog .blog-details a:hover{
+                    color: #088178 ;
+                }
+
+                 #blog .blog-details a:hover::after{
+                    background-color: #088178;
+                 }
+
+                  #blog .blog-box h1{
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    font-size: 70px;
+                    font-weight: 700;
+                    color: #c9cbce;
+                    z-index:-9 ;
+                  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            @media (max-width:799px) {
+                .section-p1 {
+	            padding: 40px 40px;
+                }
+                #navbar {
+	             display: flex;
+                 flex-direction: column;
+                 align-items: flex-start;
+	            justify-content: flex-start;
+                position: fixed;
+                top: 0;
+                right: -300px;
+                height: 100vh;
+                width: 300px;
+                background-color: #e3e6f3;
+                box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+                padding: 80px 0 0 10px;
+                transition: 0.3s;
+                }
+
+                #navbar.active{
+                    right: 0px;
+                }
+                #navbar li{
+                    margin-bottom: 25px;
+
+                }
+                #mobile{
+                    display: flex;
+                    align-items: center;
+                }
+
+                #mobile i{
+                    color: #1a1a1a;
+                    font-size: 24px;
+                    padding-left: 20px;
+                }
+
+                #close{
+                    display: initial;
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                    color: #222;
+                    font-size: 24px;
+                }
+                #lg-bag{
+                    display: none;
+                }
+
+                #hero {
+	        	 height: 70vh;
+	             padding: 0 80px;
+	           background-position: 30% right 30%;
+               }
+
+               #feature {
+	           justify-content: center;
+	            }
+
+                #feature .fe-box {
+	            margin: 15px 15px;
+               }
+            
+            }
+
+            /* Extra Small Devices - Small Phones (up to 320px) */
+@media (max-width: 320px) {
+  /* Add phone-specific adjustments */
+}
+
+/* Small Phones (up to 375px) */
+@media (max-width: 375px) {
+  /* Add your styles */
+}
+
+/* Medium Phones (up to 425px) */
+@media (max-width: 425px) {
+  /* Add your styles */
+}
+
+/* Tablets (up to 768px) — optional, since 799px is similar */
+@media (max-width: 768px) {
+  /* You may keep this empty or reuse 799px styles if needed */
+}
+
+/* Small Laptops (up to 1024px) */
+@media (max-width: 1024px) {
+  /* Add adjustments for small laptops */
+}
+
+/* Laptops / Desktops (up to 1280px) */
+@media (max-width: 1280px) {
+  /* Add your styles */
+}
+
+/* Large Desktops (up to 1440px) */
+@media (max-width: 1440px) {
+  /* Add your styles */
+}
+
+/* Full HD Screens (up to 1920px) */
+@media (max-width: 1920px) {
+  /* Add your styles */
+}
+
+/* Small devices: phones like iPhone SE, 11, etc. */
+@media (max-width: 480px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .blog-box {
+    flex-direction: column;
+  }
+
+  .blog-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form button {
+    width: 100%;
+  }
+
+  footer .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .row img {
+    width: 100px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1400px) {
+  /* Your styles here */
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (max-width: 1200px) {
+  /* Your styles here */
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (max-width: 992px) {
+  /* Your styles here */
+}
+
+/* Small devices (large phones, 576px to 767px) */
+@media (max-width: 768px) {
+  /* Your styles here */
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+  /* Your styles here */
+}
+
+/* Very small devices (older phones, 400px and below) */
+@media (max-width: 400px) {
+  /* Your styles here */
+}
+
 
               
 
